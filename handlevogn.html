@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SweetGate - Handlevogn</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Makes navbar -->
+        <script src="js/navbar.js"></script>
+
+        <!-- Content goes in here -->
+        <main>
+            <table id="cartTable"></table>
+            <div id="cartTotal">
+                <h2 id="cartTotalPrice">Totalpris: 200kr</h2>
+                <div id="cartButton" onclick="cartPurchase()">
+                    <p>Plasser bestilling</p>
+                </div>
+            </div>
+        </main>
+
+        <script src="js/chocolateArray.js"></script>
+        <script src="js/cart.js"></script>
+        <script>
+            /* Makes the cart contents visible on screen */
+            cartRender();
+        </script>
+        <script>
+            /* Checks if cart is empty */
+            cartEmpty();
+        </script>
+        <!-- Makes footer -->
+        <script src="js/footer.js"></script>
+    </div>
+</body>
+
+</html>

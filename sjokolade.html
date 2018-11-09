@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SweetGate - Sjokolader</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Makes navbar -->
+        <script src="js/navbar.js"></script>
+
+        <!-- Content goes in here -->
+        <main>
+
+            <h1>
+                Sjokolader
+            </h1>
+
+            <p class="subtitle">
+                Vi har stor variasjon av ulike typer sjokolade. Vi ønsker at alle skal kunne finne sin favoritt.
+                Her kan dere få oversikt over produktene våre og lese nærmere om hver type.
+
+            </p>
+
+            <div class="cocolatesContainer">
+                <script src="js/chocolateArray.js"></script>
+                <script src="js/chocolateDivs.js"></script>
+            </div>
+
+            <div id="modalBackground">
+                <!-- Inspiration: https://www.w3schools.com/howto/howto_css_modals.asp -->
+                <div id="modalContent">
+                    <img src="#" alt="Bilde av produktet" id="modalImg">
+                    <h2 id="modalTitle">Sjokolade</h2>
+                    <div id="modalShop">
+                        <input type="number" name="modal amount" id="modalAmount">
+                        <input type="text" name="modal price" id="modalPrice" disabled>
+                        <img src="img/cart.svg" alt="Handlevognikon" id="modalCart">
+                    </div>
+                    <p id="modalText">
+                        Lorem ipsum dolor sit amet, et cetera, et cetera...
+                    </p>
+                </div>
+            </div>
+            <script src="js/chocolateModal.js"></script>
+        </main>
+
+        <script src="js/cart.js"></script>
+        <script>
+            cartGet();
+        </script>
+        <script src="js/footer.js"></script>
+    </div>
+</body>
+
+</html>
